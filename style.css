@@ -1,0 +1,183 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+#active {
+    color:orange;
+}
+
+/* Header */
+
+.navigation ul{
+    padding: 4rem 2rem 10rem 2rem;
+}
+
+.navigation a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration-line: none;
+    color:#fff;
+}
+
+.navigation li{
+    list-style: none;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #c3c3c3 ;
+
+}
+
+header h1{
+    color:#D5EEFC;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    padding: 4rem 2rem 6.3rem 2rem;
+}
+
+header{
+    background-image: url(../img/bg.jpg);
+    margin-bottom: 2rem;
+}
+
+.control{
+    margin-left: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+button{
+    margin-right: 1rem;
+    color:#676767;;
+    border:none;
+    background-color: #fff;
+    font-size: 1.2rem;
+}
+
+#dynamic-content h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color:#67BDE3;
+}
+
+img{
+    display: block;
+    margin:0 auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    max-width:80%;
+}
+
+#dynamic-content p{
+    max-width: 80%;
+    display: block;
+    margin:0 auto;
+}
+
+.social{
+    bottom:3rem;
+    z-index:10;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display:inline-block;
+    color:rgb(177, 177, 177);
+    margin-right:1rem;
+    transform: scale(1);
+    transition:0.5s;
+}
+
+.social li a:hover{
+    transform: scale(0.9) translateY(-15px);
+}
+
+.copyright{
+    margin-left: 3rem;  
+    margin-bottom: 2rem;
+    color: #AC5414;
+}
+/***************************************
+			Landscape phone and up
+***************************************************/
+@media only screen and (max-width: 30rem) {
+
+}
+
+/***************************************************
+Custom Media Query - 25rem and 40rem
+***************************************************/
+@media only screen and (min-width: 30rem) and (max-width:60em )  {
+   
+    .navigation{
+        width: 85%;
+        /* margin:auto; */
+        padding: 0.3rem 0;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+}
+
+.navigation ul{
+    padding: 4rem 2rem 1rem 2rem;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    position:relative;
+    border-bottom: none;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: capitalize;
+    font-weight:300;
+    margin:0 20px; 
+}
+
+.navigation ul li::after{
+    content:'';
+    height:1px;
+    width:0;
+    background:#c3c3c3;
+    left:0;
+    bottom:-9px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover::after{
+    width:100%;
+}
+
+.control{
+    margin-left:10%;
+    margin-bottom: 2rem;
+}
+
+#dynamic-content p{
+    max-width: 70%;
+}
+
+.social {
+    margin-left:68%;
+}
+
+.copyright{
+    margin-left: 66%;
+}
+
+
+}
+
